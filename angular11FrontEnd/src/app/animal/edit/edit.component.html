@@ -1,0 +1,27 @@
+<h2 class="mb-4">Edit Details</h2>
+<div class="form-group row mb-3">
+
+    <label class="col-sm-1 col-form-label">Name:</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" 
+        placeholder="Enter Animal Name" [(ngModel)]="Name">
+    </div>
+</div>
+
+<div class="form-group row mb-5">
+
+    <label class="col-sm-1 col-form-label">Species:</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" 
+        placeholder="Enter Animal Species" [(ngModel)]="Species">
+    </div>
+</div>
+
+<button class="btn btn-success mx-1" (click)="updateAnimal()">
+    Save
+</button>
+<a class="btn btn-primary" href="animal">
+    Back
+</a>
+
+<router-outlet></router-outlet>
